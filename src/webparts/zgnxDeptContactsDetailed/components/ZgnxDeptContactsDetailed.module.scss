@@ -1,0 +1,178 @@
+@import "~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss";
+@import "../../../../src/styles/Variables";
+.PeopleChart {
+  background: $bg-color-white;
+  margin: 30px 0;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 100%;
+  align-content: space-between;
+  overflow-y: scroll;
+  .grayBx {
+    margin: 30px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100%;
+    align-content: space-between;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+
+  .grayBx {
+    background: $bg-color-white;
+    padding: 2px;
+    border-radius: 5px;
+    margin: 0 5px 0 0;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+
+  .grayBg {
+    display: inline-block;
+    background: $bg-color-white;
+    /*padding: 10px;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;*/
+  }
+
+  .grayContent h4 {
+    margin: 0;
+  }
+
+  .grayImg {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 100px;
+    float: left;
+  }
+
+  .grayContent {
+    width: 70%;
+    float: right;
+    padding: 10px 0;
+  }
+
+  .grayImg img {
+    border-radius: 50%;
+  }
+
+  .tdStyle {
+    text-align: left;
+  }
+  .tdStyleImg,
+  .tdStyleName,
+  .tdStyleMail,
+  .tdStylePhone,
+  .tdStyleResp {
+    text-align: left;
+    width: auto;
+  }
+  .tdStyleImg {
+    min-width: 90px;
+  }
+  .tdStyleName {
+    width: 150px;
+    padding: 10px 0;
+    h4 {
+      margin: 0;
+    }
+  }
+  .tdStyleMail {
+    width: 150px;
+    padding: 10px 0 0 10px;
+  }
+  .tdStyleResp {
+    padding: 10px 0 0 10px;
+  }
+
+  .tableStyle {
+    visibility: visible;
+  }
+  .trStyle {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 10px;
+  }
+}
+
+// peoples list with flexbox
+.border {
+  border-left: 1px solid rgb(175, 175, 175);
+  border-right: 1px solid rgb(175, 175, 175);
+  width: 100%;
+}
+.peoples_list_item {
+  display: flex;
+  box-sizing: border-box;
+  // width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem 1.5rem;
+  border-top: 1px solid rgb(175, 175, 175);
+}
+.peoples_list_item:nth-child(odd) {
+  background-color: rgb(238, 238, 238);
+}
+.peoples_list_item > div {
+  padding-right: 3.2rem;
+  padding-top: 1.2rem;
+  text-align: left;
+}
+.peoples_image_name {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.peoples_image_name .peoples_image {
+  width: 70px;
+}
+.peoples_image img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.peoples_name {
+  flex: 1;
+  padding-left: 1.2rem;
+}
+.peoples_name h4 {
+  margin: 0.3rem 0px;
+}
+.peoples_mail {
+  width: 20%;
+}
+.peoples_mail p {
+  margin: 0.5rem 0;
+}
+.peoples_responsibilities {
+  width: 50%;
+  padding-left: 1.5rem;
+}
+@media (max-width: 768px) {
+  .peoples_list_item {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .peoples_image_name {
+    width: auto;
+  }
+  .peoples_mail {
+    width: auto;
+  }
+  .peoples_responsibilities {
+    width: auto;
+    padding-left: 0rem;
+  }
+}

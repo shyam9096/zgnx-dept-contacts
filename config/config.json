@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "zgnx-dept-contacts-short-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/zgnxDeptContactsShort/ZgnxDeptContactsShortWebPart.js",
+          "manifest": "./src/webparts/zgnxDeptContactsShort/ZgnxDeptContactsShortWebPart.manifest.json"
+        }
+      ]
+    },
+    "zgnx-dept-contacts-wide-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/zgnxDeptContactsWide/ZgnxDeptContactsWideWebPart.js",
+          "manifest": "./src/webparts/zgnxDeptContactsWide/ZgnxDeptContactsWideWebPart.manifest.json"
+        }
+      ]
+    },
+    "zgnx-dept-contacts-detailed-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/zgnxDeptContactsDetailed/ZgnxDeptContactsDetailedWebPart.js",
+          "manifest": "./src/webparts/zgnxDeptContactsDetailed/ZgnxDeptContactsDetailedWebPart.manifest.json"
+        }
+      ]
+    },
+    "zogenix-dept-contacts-bio-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/zogenixDeptContactsBio/ZogenixDeptContactsBioWebPart.js",
+          "manifest": "./src/webparts/zogenixDeptContactsBio/ZogenixDeptContactsBioWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ZgnxDeptContactsShortWebPartStrings": "lib/webparts/zgnxDeptContactsShort/loc/{locale}.js",
+    "ZgnxDeptContactsWideWebPartStrings": "lib/webparts/zgnxDeptContactsWide/loc/{locale}.js",
+    "ZgnxDeptContactsDetailedWebPartStrings": "lib/webparts/zgnxDeptContactsDetailed/loc/{locale}.js",
+    "ZogenixDeptContactsBioWebPartStrings": "lib/webparts/zogenixDeptContactsBio/loc/{locale}.js"
+  }
+}
